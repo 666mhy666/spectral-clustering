@@ -1,0 +1,13 @@
+dataset,method,neighbors,k,components,ari
+Halfmoon,k-means,,2,,0.2525184244081995
+Halfmoon,kNN spectral,5.0,2,2.0,1.0
+Halfmoon,kNN spectral,10.0,2,2.0,1.0
+Halfmoon,kNN spectral,15.0,2,2.0,1.0
+Halfmoon,kNN spectral,20.0,2,2.0,1.0
+Halfmoon,RBF spectral,,2,1.0,1.0
+Bullseye,k-means,,3,,0.003826013112695367
+Bullseye,kNN spectral,5.0,3,5.0,0.9231796649039585
+Bullseye,kNN spectral,10.0,3,3.0,1.0
+Bullseye,kNN spectral,15.0,3,3.0,1.0
+Bullseye,kNN spectral,20.0,3,3.0,1.0
+Bullseye,RBF spectral,,3,1.0,1.0

@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "cluster_counts": {
+    "Halfmoon": 2,
+    "Bullseye": 3
+  },
+  "interpretation": "Descriptive benchmark with known cluster counts. Labels used only to report ARI; no held-out generalization claim."
+}
