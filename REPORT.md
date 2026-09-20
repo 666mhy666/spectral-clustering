@@ -10,17 +10,19 @@ Two synthetic benchmark datasets. Exact results use the two supplied teaching CS
 
 ## Analysis
 
-Separated neighborhood size from the number of clusters, used the appropriate number of normalized eigenvectors, and added connectivity and isolated-node checks. The selected examples use 2 and 3 clusters rather than interpreting neighbor counts as cluster counts.
+I implemented normalized graph-Laplacian clustering, compared it with k-means, and reported adjusted Rand index, graph connectivity, and isolated-node diagnostics across a neighbor grid.
 
-The entry point is `analysis.py`. Parameters and analysis cohorts are recorded in the code and result files.
+The entry point is `analysis.py`. Parameters, variables, assumptions, and analysis cohorts are recorded in the code and generated result files.
 
 ## Findings
 
-At the prespecified 10-neighbor setting, normalized spectral clustering achieved ARI 1.0 on both supplied datasets, compared with 0.253 and 0.004 for k-means. The neighbor grid is reported in full, including disconnected-graph diagnostics. These are descriptive benchmark scores, not held-out performance.
+At 10 neighbors, normalized spectral clustering achieved ARI 1.0 on both supplied datasets, compared with 0.253 and 0.004 for k-means. The neighbor grid is reported in full, including disconnected-graph diagnostics. These are descriptive benchmark scores, not held-out performance.
 
-![Main result](results/clustering-comparison.png)
+![K-means and normalized spectral-clustering assignments on the two supplied datasets.](results/clustering-comparison.png)
 
-## Limits
+_K-means and normalized spectral-clustering assignments on the two supplied datasets._
+
+## Assumptions and interpretation
 
 The number of clusters is known for these teaching examples. ARI uses the provided reference labels for evaluation. Affinity choices matter, and perfect recovery of these examples is not evidence of broad generalization. Dense eigendecomposition is not designed for large datasets.
 

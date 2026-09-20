@@ -1,7 +1,11 @@
 # Revision notes
 
-The starting point was Heyang Ma’s independent UCLA course analysis. The public version was revised with coding-assistant support in September 2026 to improve reproducibility and interpretation. It is academic work, not employment or clinical deployment.
+## Original coursework
 
-Separated neighborhood size from the number of clusters, used the appropriate number of normalized eigenvectors, and added connectivity and isolated-node checks. The selected examples use 2 and 3 clusters rather than interpreting neighbor counts as cluster counts.
+The original coursework compared k-means and spectral clustering on supplied nonlinear teaching datasets.
 
-Published numerical findings refer to the revised scripts and their generated outputs. Original graded reports, instructor prompts, source data, student identifiers, and notebook outputs are not included. The original files are preserved privately.
+## September 2026 portfolio revision
+
+The September 2026 revision separated neighborhood size from the number of clusters, used the appropriate number of normalized eigenvectors, and added connectivity and isolated-node checks. The examples use 2 and 3 clusters rather than interpreting neighbor counts as cluster counts.
+
+The public revision was prepared with coding-assistant support to improve reproducibility and interpretation. Published numerical findings refer to the revised scripts and generated outputs unless stated otherwise. Original graded reports, instructor prompts, source data, student identifiers, and notebook outputs are not included.
